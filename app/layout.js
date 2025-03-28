@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from '@/components/Navbar';
-import ParticlesBackground from "@/components/ParticlesBackground";
+import { Navbar } from "@/components/custom/Nav/navbar";
 
 
 const geistSans = Geist({
@@ -27,7 +26,6 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="antialiased relative">
-        <ParticlesBackground /> {/* Background animation */}
         <Navbar /> {/* Navbar inside body */}
         <main>{children}</main> {/* Page content */}
       </body>
