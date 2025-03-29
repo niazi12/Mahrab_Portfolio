@@ -4,8 +4,7 @@ import About from "../components/About";
 import HeroSection from "../components/HeroSection";
 import Skills from "@/components/Skills";
 import AchievementsSection from "../components/Achievement"; 
-import Experience from "../components/Experience";
-
+import Publication from "@/components/Publication";
 
 
 export default function Home() {
@@ -15,6 +14,7 @@ export default function Home() {
       <About />
       <AchievementsSection />
       <Skills />
+      <Publication />
       {/* <Experience /> */}
       {/* Add more sections as needed */}
     </main>

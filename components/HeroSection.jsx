@@ -23,6 +23,8 @@ const HeroSection = () => {
               sequence={[
                 "Niazi Mahrab",
                 1000,
+                "Software Engineer",
+                1000,
                 "Python Developer",
                 1000,
                 "Odoo ERP Specialist",
