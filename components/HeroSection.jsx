@@ -1,69 +1,84 @@
 "use client";
-
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import React from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
-export const HeroSection = () => {
+const HeroSection = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen bg-black text-white">
-      {/* Background Glow Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-teal-500/10 via-black to-teal-500/10 blur-3xl opacity-20" />
-
-      {/* Hero Content */}
-      <div className="text-center z-10">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-5xl md:text-6xl font-extrabold tracking-wide"
-        >
-          Hello, I'm{" "}
-          <span className="text-teal-400 glow">Niazi Mahrab</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-lg text-gray-400 mt-4"
-        >
-          Python & Odoo Developer | Machine Learning Enthusiast
-        </motion.p>
-
-        {/* Call to Action Button */}
+    <section className="py-16 lg:py-24 bg-[#121212] text-white">
+      <div className="container mx-auto px-6 sm:px-12 md:px-16 lg:px-24 xl:px-32 grid grid-cols-1 sm:grid-cols-12 gap-8">
+        {/* Left Content */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2 }}
-          className="mt-6"
+          transition={{ duration: 0.5 }}
+          className="col-span-12 sm:col-span-7 text-center sm:text-left"
         >
-          <Button className="px-6 py-3 text-lg font-semibold bg-teal-500 hover:bg-teal-400 transition-all">
-            Hire Me
-          </Button>
+          <h1 className="mb-4 text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight">
+            <span className="text-[#d6f49a]">Hello, I&apos;m</span>
+            <br />
+            <TypeAnimation
+              sequence={[
+                "Niazi Mahrab",
+                1000,
+                "Python Developer",
+                1000,
+                "Odoo ERP Specialist",
+                1000,
+                "AI Enthusiast",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              className="text-[#eaf0ef]"
+            />
+          </h1>
+          <p className="text-[#ADB7BE] text-lg sm:text-xl mb-6">
+            Transforming ideas into intelligent solutions with Python—Odoo ERP, automation, and AI-driven applications.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
+            {/* Primary Button */}
+            <Link
+              href="/#contact"
+              className="px-6 py-3 rounded-full bg-gradient-to-r from-[#6A5ACD] to-[#50E3C2] text-white font-semibold shadow-lg hover:opacity-90 transition"
+            >
+              Hire Me
+            </Link>
+            {/* Secondary Button */}
+            <Link
+              href="/"
+              className="px-1 py-1 rounded-full bg-gradient-to-r from-[#444] to-[#777] text-white font-semibold"
+            >
+              <span className="block bg-[#121212] hover:bg-[#222222] rounded-full px-5 py-2 transition">
+                Download CV
+              </span>
+            </Link>
+          </div>
+        </motion.div>
+
+        {/* Right Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-12 sm:col-span-5 flex justify-center sm:justify-end"
+        >
+          <div className="relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] rounded-full overflow-hidden shadow-xl border-4 border-[#333333]">
+            <Image
+              src="/images/11.png"
+              alt="hero image"
+              className="object-cover w-full h-full rounded-full"
+              width={350}
+              height={350}
+            />
+          </div>
         </motion.div>
       </div>
-
-      {/* Profile Image with Animated Border */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-        className="absolute top-1/4 md:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-      >
-        <div className="relative w-48 h-48 md:w-64 md:h-64">
-          {/* Animated Glowing Border */}
-          <div className="absolute inset-0 rounded-full border-4 border-teal-500 animate-pulse opacity-50" />
-
-          <Image
-            src="/images/11.jpg" // Replace with your actual image
-            alt="Niazi Mahrab"
-            width={200}
-            height={200}
-            className="rounded-full border-4 border-gray-800 shadow-lg"
-          />
-        </div>
-      </motion.div>
     </section>
   );
 };
+
+export default HeroSection;
