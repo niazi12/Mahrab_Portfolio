@@ -1,19 +1,20 @@
 "use client";
 import React from "react";
-import { SiPython, SiDjango, SiJavascript, SiReact, SiPostgresql } from "react-icons/si";
+import { SiPython, SiDjango, SiJavascript, SiPostgresql, SiNextdotjs } from "react-icons/si";
 import { FaDocker, FaGit, FaAws } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "Python", icon: <SiPython size={48} color="#306998" /> },
-  { name: "Odoo", icon: <img src="/images/odoo.png" alt="Odoo logo" className="w-12 h-12" /> },
-  { name: "Django", icon: <SiDjango size={48} color="#092e20" /> },
-  { name: "JavaScript", icon: <SiJavascript size={48} color="#f7df1e" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql size={48} color="#336791" /> },
-  { name: "Docker", icon: <FaDocker size={48} color="#2496ed" /> },
-  { name: "Git", icon: <FaGit size={48} color="#f1502f" /> },
-  { name: "AWS", icon: <FaAws size={48} color="#FF9900" /> },
-];
+    { name: "Python", icon: <SiPython size={48} color="#306998" /> },
+    { name: "Odoo", icon: <img src="/images/odoo.png" alt="Odoo logo" className="w-12 h-12" /> },
+    { name: "Django", icon: <SiDjango size={48} color="#092e20" /> },
+    { name: "Next.js", icon: <SiNextdotjs size={48} color="white" /> }, // Added Next.js
+    { name: "PostgreSQL", icon: <SiPostgresql size={48} color="#336791" /> },
+    { name: "Docker", icon: <FaDocker size={48} color="#2496ed" /> },
+    { name: "Git", icon: <FaGit size={48} color="#f1502f" /> },
+    { name: "AWS", icon: <FaAws size={48} color="#FF9900" /> },
+  ];
+  
 
 const Skills = () => {
   return (

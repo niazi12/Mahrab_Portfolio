@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 const achievementsList = [
   {
     metric: "Projects",
-    value: 100,
+    value: 25,
     postfix: "+",
   },
   {
-    prefix: "~",
-    metric: "Users",
-    value: 50,
+    prefix: "+",
+    metric: "Clients",
+    value: 10,
   },
   {
     metric: "Publications",
