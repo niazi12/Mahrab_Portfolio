@@ -39,7 +39,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-lg sm:text-xl mb-6">
-            Transforming ideas into intelligent solutions with Python—Odoo ERP, automation, and AI-driven applications.
+            Transforming ideas into intelligent solutions with Python, Odoo ERP, automation, and AI-driven applications.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
             {/* Primary Button */}

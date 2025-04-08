@@ -15,8 +15,7 @@ export default function Home() {
       <AchievementsSection />
       <Skills />
       <Publication />
-      {/* <Experience /> */}
-      {/* Add more sections as needed */}
+ {/* practise */}
     </main>
   );
 }
