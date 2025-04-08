@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const skills = [
     { name: "Python", icon: <SiPython size={48} color="#306998" /> },
-    { name: "Odoo", icon: <img src="/images/odoo.png" alt="Odoo logo" className="w-12 h-12" /> },
+    { name: "Odoo", icon: <img src="/images/odoo.jpg" alt="Odoo logo" className="w-12 h-12" /> },
     { name: "Django", icon: <SiDjango size={48} color="#092e20" /> },
     { name: "Next.js", icon: <SiNextdotjs size={48} color="white" /> }, // Added Next.js
     { name: "PostgreSQL", icon: <SiPostgresql size={48} color="#336791" /> },

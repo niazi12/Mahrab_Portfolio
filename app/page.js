@@ -15,7 +15,7 @@ export default function Home() {
       <AchievementsSection />
       <Skills />
       <Publication />
- {/* practise */}
+ {/* practisegit add */}
     </main>
   );
 }
