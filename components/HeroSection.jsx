@@ -82,5 +82,6 @@ const HeroSection = () => {
     </section>
   );
 };
+// imagesize cropp
 
 export default HeroSection;

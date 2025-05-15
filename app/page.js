@@ -5,6 +5,7 @@ import HeroSection from "../components/HeroSection";
 import Skills from "@/components/Skills";
 import AchievementsSection from "../components/Achievement"; 
 import Publication from "@/components/Publication";
+import Project from "@/components/Project";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <AchievementsSection />
       <Skills />
       <Publication />
+      <Project />
  {/* practisegit add */}
     </main>
   );
