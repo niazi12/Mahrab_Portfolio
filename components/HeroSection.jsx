@@ -49,15 +49,17 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-            {/* Secondary Button */}
-            <Link
-              href="/"
+            {/* Secondary Button with CV Link */}
+            <a
+              href="https://drive.google.com/file/d/1pC49D6ynhIX8Ssq8mMOZKzYimizsutOU/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-1 py-1 rounded-full bg-gradient-to-r from-[#444] to-[#777] text-white font-semibold"
             >
               <span className="block bg-[#121212] hover:bg-[#222222] rounded-full px-5 py-2 transition">
                 Download CV
               </span>
-            </Link>
+            </a>
           </div>
         </motion.div>
 
@@ -82,6 +84,5 @@ const HeroSection = () => {
     </section>
   );
 };
-// imagesize cropp
 
 export default HeroSection;

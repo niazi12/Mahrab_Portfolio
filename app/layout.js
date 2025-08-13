@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/custom/Nav/navbar";
 import Footer from "../components/Footer";
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased relative">
         <Navbar /> {/* Navbar inside body */}
         <main>{children}</main> {/* Page content */}
+        <Script src="/cursor.js" strategy="afterInteractive" />
         <Footer /> {/* Footer added */}
       </body>
     </html>

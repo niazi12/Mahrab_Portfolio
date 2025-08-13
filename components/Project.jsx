@@ -26,7 +26,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-16 px-6 bg-gradient-to-br from-gray-900 via-gray-950 to-black">
+    <section
+      id="projects"
+      className="py-16 px-6 bg-gradient-to-br from-gray-900 via-gray-950 to-black"
+    >
       <div className="max-w-5xl mx-auto">
         <motion.h2
           className="text-4xl font-extrabold text-center text-white mb-14"
