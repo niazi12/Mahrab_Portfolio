@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/custom/Nav/navbar";
 import Footer from "../components/Footer";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next"
 
 
 const geistSans = Geist({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main> {/* Page content */}
         <Script src="/cursor.js" strategy="afterInteractive" />
         <Footer /> {/* Footer added */}
+        <Analytics />
       </body>
     </html>
   );
